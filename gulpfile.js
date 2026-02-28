@@ -23,7 +23,7 @@ import { include } from "@mdit/plugin-include";
 import { katex } from "@mdit/plugin-katex";
 import fs from "fs";
 import { tab } from "@mdit/plugin-tab";
-import { scratchblocksPlugin } from "sb-mdit";
+import { scratchblocksPlugin } from "./lib/scratch-plugin.js";
 
 const templateDir = import.meta.dirname + "/templates";
 let assignmentMap = [];
