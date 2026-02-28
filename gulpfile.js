@@ -23,6 +23,7 @@ import { include } from "@mdit/plugin-include";
 import { katex } from "@mdit/plugin-katex";
 import fs from "fs";
 import { tab } from "@mdit/plugin-tab";
+import { scratchblocksPlugin } from "sb-mdit";
 
 const templateDir = import.meta.dirname + "/templates";
 let assignmentMap = [];
@@ -131,6 +132,7 @@ md.use(stylize, {
 md.use(tab, {
   name: "tabs",
 });
+md.use(scratchblocksPlugin);
 
 const ruleProxy = (tokens, idx, options, env, self) =>
   self.renderToken(tokens, idx, options);
