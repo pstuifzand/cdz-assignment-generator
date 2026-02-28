@@ -169,6 +169,13 @@ Handlebars.registerHelper(
   },
 );
 
+Handlebars.registerHelper(
+  "includes",
+  function (str, substring) {
+    return str && str.includes(substring);
+  },
+);
+
 function generateAssignment() {
   const writable = new Writable({
     async write(data, cb) {

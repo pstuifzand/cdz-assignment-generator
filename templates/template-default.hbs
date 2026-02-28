@@ -13,6 +13,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="{{{templateAssetFolder}}}/default.css" />
+    {{#if (includes meta.progLang "scratch")}}
+    <link rel="stylesheet" href="{{{templateAssetFolder}}}/scratchblocks.css" />
+    {{/if}}
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
